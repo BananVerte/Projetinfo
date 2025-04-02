@@ -11,6 +11,7 @@ package fr.insa.voinson.main.projet_info;
 public class Projet_info {
 
     public static void main(String[] args) {
-        System.out.println("Test");
+        System.out.println("Project project pola pola TUTUTUTU ");
+        System.out.println("Project project pola pola TUTUTUTU ");
     }
 }
