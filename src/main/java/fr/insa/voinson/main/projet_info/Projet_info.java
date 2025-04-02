@@ -11,6 +11,6 @@ package fr.insa.voinson.main.projet_info;
 public class Projet_info {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        System.out.println("Test");
     }
 }
