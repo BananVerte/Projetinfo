@@ -47,10 +47,6 @@ public class Operation {
         this.refEquipement = refEquipement;
     }
 
-    public float getDureeOperation() {
-        return dureeOperation;
-    }
-
     public void setDureeOperation(float dureeOperation) {
         this.dureeOperation = dureeOperation;
     }

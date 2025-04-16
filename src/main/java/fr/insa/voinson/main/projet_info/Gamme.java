@@ -13,6 +13,7 @@ public class Gamme {
     Produit produit;
     ArrayList<Operation> listeOperations;
     ArrayList<Equipement> listeEquipements;
+    Gamme g;
 
     private Gamme(String refGamme, Produit produit) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
@@ -50,7 +51,24 @@ public class Gamme {
         this.produit = produit;
     }
 
-    public Gamme(String refGamme, ArrayList<Operation> listeOperations, ArrayList<Equipement> listeEquipements) {
+    public Gamme getG() {
+        return g;
+    }
+
+    public void setG(Gamme g) {
+        this.g = g;
+    }
+
+    public Gamme(String refGamme, Produit produit, ArrayList<Operation> listeOperations, ArrayList<Equipement> listeEquipements, Gamme g) {
+        this.refGamme = refGamme;
+        this.produit = produit;
+        this.listeOperations = listeOperations;
+        this.listeEquipements = listeEquipements;
+        this.g = g;
+    }
+    
+
+    public Gamme(String refGamme, ArrayList<Operation> listeOperations, Produit produit) {
         this.refGamme = refGamme;
         this.listeOperations = listeOperations;
         this.listeEquipements = listeEquipements;
