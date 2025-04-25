@@ -9,7 +9,8 @@ package fr.insa.voinson.main.projet_info;
  * @author Biscouiiiit
  */
 public class Equipement {
-    String refEquipement, dEquipement;
+    private String refEquipement, dEquipement;
+    private float coutEquipement;
 
     public String getRefEquipement() {
         return refEquipement;
@@ -27,9 +28,23 @@ public class Equipement {
         this.dEquipement = dEquipement;
     }
 
-    public Equipement(String refEquipement, String dEquipement) {
+    public Equipement(String refEquipement, String dEquipement, float coutEquipement) {
         this.refEquipement = refEquipement;
         this.dEquipement = dEquipement;
+        this.coutEquipement = coutEquipement;
+    }
+
+    public float getCoutEquipement() {
+        return coutEquipement;
+    }
+
+    public void setCoutEquipement(float coutEquipement) {
+        this.coutEquipement = coutEquipement;
+    }
+
+    @Override
+    public String toString() {
+        return "Equipement [refEquipement=" + refEquipement + ", dEquipement=" + dEquipement + ", coutEquipement=" + coutEquipement + "]";
     }
     
 }

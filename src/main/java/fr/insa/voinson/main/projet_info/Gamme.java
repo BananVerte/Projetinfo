@@ -9,15 +9,13 @@ import java.util.ArrayList;
  * @author Biscouiiiit
  */
 public class Gamme {
-    String refGamme;
-    Produit produit;
-    ArrayList<Operation> listeOperations;
-    ArrayList<Equipement> listeEquipements;
-    Gamme g;
+    private String refGamme;
+    private Produit produit;
+    private ArrayList<Operation> listeOperations;
+    private ArrayList<Equipement> listeEquipements;
+    private Gamme g;
 
-    private Gamme(String refGamme, Produit produit) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    
 
     public String getRefGamme() {
         return refGamme;
@@ -68,12 +66,6 @@ public class Gamme {
     }
     
 
-    public Gamme(String refGamme, ArrayList<Operation> listeOperations, Produit produit) {
-        this.refGamme = refGamme;
-        this.listeOperations = listeOperations;
-        this.listeEquipements = listeEquipements;
-        this.produit=produit;
-    }
     // 🔹 Méthode statique pour créer une gamme et l'associer au produit
     public static Gamme creerGamme(String refGamme, Produit produit) {
         if (produit.getGamme() == null) {
