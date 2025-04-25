@@ -15,6 +15,10 @@ public class Gamme {
     private ArrayList<Equipement> listeEquipements;
     private Gamme g;
 
+    private Gamme(String refGamme, Produit produit) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     
 
     public String getRefGamme() {
