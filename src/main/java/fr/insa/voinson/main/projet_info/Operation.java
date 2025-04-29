@@ -10,9 +10,7 @@ package fr.insa.voinson.main.projet_info;
  */
 public class Operation {
 
-    static void clear() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    
     String refOperation, dOperation, refEquipement;
     float dureeOperation, coutOperation;
     

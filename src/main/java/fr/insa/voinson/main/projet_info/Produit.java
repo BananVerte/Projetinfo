@@ -10,12 +10,43 @@ package fr.insa.voinson.main.projet_info;
  */
 public class Produit {
 
-    Object getGamme() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    private String codeProduit;
+    private String dProduit;
+    private float prix;
+
+    public Produit(String codeProduit, String dPtoduit, float prix) {
+        this.codeProduit = codeProduit;
+        this.dProduit = dPtoduit;
+        this.prix = prix;
     }
 
-    void setGamme(Gamme g) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getCodeProduit() {
+        return codeProduit;
+    }
+
+    public void setCodeProduit(String codeProduit) {
+        this.codeProduit = codeProduit;
+    }
+
+    public String getdPtoduit() {
+        return dProduit;
+    }
+
+    public void setdPtoduit(String dPtoduit) {
+        this.dProduit = dPtoduit;
+    }
+
+    public float getPrix() {
+        return prix;
+    }
+
+    public void setPrix(float prix) {
+        this.prix = prix;
+    }
+    
+    @Override
+    public String toString(){
+        return "Produit [codeProduit=" + codeProduit + ", dProduit=" + dProduit + "]";  
     }
     
 }
